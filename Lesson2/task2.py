@@ -1,0 +1,1 @@
+print("unique values :",set(input("input some text :").split(" ")))
