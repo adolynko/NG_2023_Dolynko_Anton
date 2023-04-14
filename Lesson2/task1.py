@@ -3,3 +3,4 @@ def secret():
     findWord = input("input search word :")
     print("Number of your words in text :",text.count(findWord))
 
+secret()
