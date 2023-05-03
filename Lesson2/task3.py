@@ -1,8 +1,11 @@
-size = int(input("input wish size of list : "))
-lists = [list([str(item) for item in range(10)]) for n in range(size)]
-print("number of lists :",len(lists))
-set_list = ""
-for i_item in lists:
-    for j_item in i_item:
-        set_list += j_item
-print(set(set_list))
+size = int(input("enter desired length of list : "))
+list1 = []
+list2 = []
+for item in range(size):
+    list1.append(input().split(" "))
+
+for item in list1:
+    for kitem in item:
+        list2.append(kitem)
+
+print(list(set(tuple(list2))))
