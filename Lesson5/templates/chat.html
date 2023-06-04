@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chat</title>
+</head>
+<body>
+    <h1>chat</h1>
+    <p>you logined as: {{ username }}</p>
+    <form method="post">
+        <input type="text" name="message">
+        <input type="submit" value="Отправить">
+    </form>
+    <h3>chat history:</h3>
+    <div>
+        {% for entry in chat_history %}
+            <p>{{ entry[0] }}: {{ entry[1] }}</p>
+        {% endfor %}
+    </div>
+    <a href="/logout">logout</a>
+</body>
+</html>
